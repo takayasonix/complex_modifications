@@ -1,0 +1,31 @@
+{
+	"title": "fnbar // スペースバーを長押ししたとき、fnを送信する",
+	"rules": [
+		{
+			"description": "fnbar // [spacebar.hold]=[fn]",
+			"manipulators": [
+				{
+					"from": {
+						"key_code": "spacebar",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "fn"
+						}
+					],
+					"to_if_alone": [
+						{
+							"key_code": "spacebar"
+						}
+					],
+					"type": "basic"
+				}
+			]
+		}
+	]
+}

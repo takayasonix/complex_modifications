@@ -1,0 +1,35 @@
+{
+    "title": "volume // fnを押しながらv/sを押すと、volume_increment/volume_decrementを送信する",
+    "rules": [
+        {
+            "description": "volume_increment // [fn]+[v]=[volume_increment]",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": { "mandatory": [ "fn" ] }
+                    },
+                    "to": [
+                        {"key_code": "volume_increment"}
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "volume_decrement // [fn]+[c]=[volume_decrement]",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": { "mandatory": [ "fn" ] }
+                    },
+                    "to": [
+                        {"key_code": "volume_decrement"}
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
