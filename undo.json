@@ -1,35 +1,52 @@
 {
-	"title": "undo // left_controlを単押ししたとき、元に戻すショートカットを送信する",
-	"rules": [
-		{
-			"description": "undo // [single.left_control]=[left_command]+[z]",
-			"manipulators": [
-				{
-					"type": "basic",
-					"from": {
-						"key_code": "left_control",
-						"modifiers": {
-							"optional": [
-								"any"
-							]
-						}
-					},
-					"to": [
-						{
-							"key_code": "left_control",
-							"lazy": true
-						}
-					],
-					"to_if_held_down": [
-						{
-							"key_code": "left_control"
-						}
-					],
-					"to_if_alone": [
-						{"key_code": "z","modifiers": [ "left_command" ]}
-					]
-				}
-			]
-		}
-	]
+  "title": "undo / redo // left_controlを単押ししたとき、元に戻すショートカットを送信する",
+  "rules": [
+    {
+      "description": "undo // [single.left_control]=[left_command]+[z]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": ["caps_lock"]
+            }
+          },
+          "to": [
+            { "key_code": "left_control", "lazy": true }
+          ],
+          "to_if_held_down": [
+            { "key_code": "left_control" }
+          ],
+          "to_if_alone": [
+            { "key_code": "z", "modifiers": ["left_command"] }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "redo // [single.fn+left_control]=[left_command]+[shift]+[z]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": ["fn"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            { "key_code": "left_control", "lazy": true }
+          ],
+          "to_if_held_down": [
+            { "key_code": "left_control" }
+          ],
+          "to_if_alone": [
+            { "key_code": "z", "modifiers": ["left_command", "shift"] }
+          ]
+        }
+      ]
+    }
+  ]
 }
