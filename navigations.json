@@ -1,0 +1,77 @@
+{
+  "title": "navigations // fnを押しながらu/i/o/pを押すと、文末/文頭まで移動/削除を送信する",
+  "rules": [
+    {
+      "description": "navigations // [fn]+[u]→[cmd+backspace]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": [ "command" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "navigations // [fn]+[i]→[ctrl+a]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [ "control" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "navigations // [fn]+[o]→[ctrl+e]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [ "control" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "navigations // [fn]+[p]→[ctrl+k]",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "k",
+              "modifiers": [ "control" ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

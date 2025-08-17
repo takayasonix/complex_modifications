@@ -1,93 +1,85 @@
 {
-    "title": "macro // fnを押しながらq/w/e/rを押すと、username/homepage/email/phoneを送信する",
-    "rules": [
+  "title": "macro // fnを押しながらq/w/rを押すと、ユーザー名/メールアドレス/電話番号を送信する",
+  "rules": [
+    {
+      "description": "macro // [fn]+[q]=[username]",
+      "manipulators": [
         {
-            "description": "macro // [fn]+[q]=[takayaso]",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "q",
-                        "modifiers": { "mandatory": [ "fn" ] }
-                    },
-                    "to": [
-                        {"key_code": "lang2"},
-                        {"key_code": "t"},
-                        {"key_code": "a"},
-                        {"key_code": "k"},
-                        {"key_code": "a"},
-                        {"key_code": "y"},
-                        {"key_code": "a"},
-                        {"key_code": "s"},
-                        {"key_code": "o"}
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "macro // [fn]+[w]=[takayasonix@gmail.com]",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "w",
-                        "modifiers": { "mandatory": [ "fn" ] }
-                    },
-                    "to": [
-                        {"key_code": "lang2"},
-                        {"key_code": "t"},
-                        {"key_code": "a"},
-                        {"key_code": "k"},
-                        {"key_code": "a"},
-                        {"key_code": "y"},
-                        {"key_code": "a"},
-                        {"key_code": "s"},
-                        {"key_code": "o"},
-                        {"key_code": "n"},
-                        {"key_code": "i"},
-                        {"key_code": "x"},
-                        {
-                            "key_code": "2",
-                            "modifiers": [ "shift" ]
-                        },
-                        {"key_code": "g"},
-                        {"key_code": "m"},
-                        {"key_code": "a"},
-                        {"key_code": "i"},
-                        {"key_code": "l"},
-                        {"key_code": "period"},
-                        {"key_code": "c"},
-                        {"key_code": "o"},
-                        {"key_code": "m"}
-                    ],
-                    "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "macro // [fn]+[e]=[09038964272]",
-            "manipulators": [
-                {
-                    "from": {
-                        "key_code": "e",
-                        "modifiers": { "mandatory": [ "fn" ] }
-                    },
-                    "to": [
-                        {"key_code": "lang2"},
-                        {"key_code": "0"},
-                        {"key_code": "9"},
-                        {"key_code": "0"},
-                        {"key_code": "3"},
-                        {"key_code": "8"},
-                        {"key_code": "9"},
-                        {"key_code": "6"},
-                        {"key_code": "4"},
-                        {"key_code": "2"},
-                        {"key_code": "7"},
-                        {"key_code": "2"}
-                    ],
-                    "type": "basic"
-                }
-            ]
+          "from": {
+            "key_code": "q",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {"key_code": "lang2"},
+            {"key_code": "u"},
+            {"key_code": "s"},
+            {"key_code": "e"},
+            {"key_code": "r"},
+            {"key_code": "n"},
+            {"key_code": "a"},
+            {"key_code": "m"},
+            {"key_code": "e"}
+          ],
+          "type": "basic"
         }
-    ]
+      ]
+    },
+    {
+      "description": "macro // [fn]+[w]=[user@example.com]",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {"key_code": "lang2"},
+            {"key_code": "u"},
+            {"key_code": "s"},
+            {"key_code": "e"},
+            {"key_code": "r"},
+            {"key_code": "at_sign"},
+            {"key_code": "e"},
+            {"key_code": "x"},
+            {"key_code": "a"},
+            {"key_code": "m"},
+            {"key_code": "p"},
+            {"key_code": "l"},
+            {"key_code": "e"},
+            {"key_code": "period"},
+            {"key_code": "c"},
+            {"key_code": "o"},
+            {"key_code": "m"}
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "macro // [fn]+[e]=[09012345678]",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {"key_code": "lang2"},
+            {"key_code": "0"},
+            {"key_code": "9"},
+            {"key_code": "0"},
+            {"key_code": "1"},
+            {"key_code": "2"},
+            {"key_code": "3"},
+            {"key_code": "4"},
+            {"key_code": "5"},
+            {"key_code": "6"},
+            {"key_code": "7"},
+            {"key_code": "8"}
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
 }
