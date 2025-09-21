@@ -1,5 +1,5 @@
 {
-  "title": "mains // fnを押しながらx/c/vを押すと、バックスペース/デリート/エンターを送信する",
+  "title": "mains // fnを押しながらx/c/vを押すと、Backspace/Delete/Enterを送信する",
   "rules": [
     {
       "description": "mains // [fn]+[x]=[backspace]",

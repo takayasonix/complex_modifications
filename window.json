@@ -1,0 +1,59 @@
+{
+  "title": "window // fnを押しながらc/x/vを押すと、ウィンドウサイズ変更を送信する",
+  "rules": [
+    {
+      "description": "window // [fn]+[c]=[center]",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "c",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [ "left_control", "fn" ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "window // [fn]+[x]=[left_half]",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "x",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [ "left_control", "fn" ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "window // [fn]+[v]=[right_half]",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": { "mandatory": [ "fn" ] }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [ "left_control", "fn" ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

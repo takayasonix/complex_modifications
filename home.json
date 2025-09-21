@@ -1,8 +1,8 @@
 {
-  "title": "home_end // fnを押しながらg/hを押すと、Home/Endを送信する",
+  "title": "home // fnを押しながらg/hを押すと、Home/Endを送信する",
   "rules": [
     {
-      "description": "home_end // [fn]+[g]=[home]",
+      "description": "home // [fn]+[g]=[home]",
       "manipulators": [
         {
           "from": {
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "description": "home_end // [fn]+[h]=[end]",
+      "description": "home // [fn]+[h]=[end]",
       "manipulators": [
         {
           "from": {
